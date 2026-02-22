@@ -3,6 +3,6 @@ name: "Pamphile Roy"
 category: "contributors"
 order: 3
 role: "Tahitian Pythonista 🏝️"
-avatar: "/pamhile.gif"
+avatar: "/pamphile.gif"
 affiliation: "Manao, Austria"
 ---
