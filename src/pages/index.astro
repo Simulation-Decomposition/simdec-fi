@@ -1,40 +1,31 @@
 ---
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>SimDec — Simulation Decomposition</title>
-  </head>
-  <body style="font-family: system-ui, sans-serif; margin: 0;">
-    <main style="max-width: 900px; margin: 3rem auto; padding: 0 1rem;">
+<Layout title="SimDec — Simulation Decomposition">
+  <section style="margin-bottom: 2.5rem;">
+    <h1 style="font-size: 2.5rem; margin: 0 0 0.75rem 0;">
+      Simulation Decomposition (SimDec)
+    </h1>
+    <p style="font-size: 1.2rem; opacity: 0.85; margin: 0;">
+      A method for turning complex simulation outputs into structured, decision-relevant insight.
+    </p>
+  </section>
 
-      <section style="margin-bottom: 3rem;">
-        <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">
-          Simulation Decomposition (SimDec)
-        </h1>
-        <p style="font-size: 1.2rem; opacity: 0.85;">
-          A method for turning complex simulation outputs into structured, decision-relevant insight.
-        </p>
-      </section>
+  <section style="margin-bottom: 2.5rem;">
+    <h2>What is SimDec?</h2>
+    <p>
+      SimDec decomoses simulation results into interpretable components.
+      Instead of black-box averages, decision-makers see drivers, interactions, and trade-offs.
+    </p>
+  </section>
 
-      <section style="margin-bottom: 3rem;">
-        <h2>What is SimDec?</h2>
-        <p>
-          SimDec decomposes simulation results into interpretable components.
-          Instead of black-box averages, decision-makers see drivers, interactions, and trade-offs.
-        </p>
-      </section>
-
-      <section style="margin-bottom: 3rem;">
-        <h2>Start here</h2>
-        <ul>
-          <li><a href="/posts">Tutorials, comparisons, cases, news</a></li>
-          <li><a href="/publications">Papers and publications</a></li>
-          <li><a href="/people">Team and contributors</a></li>
-        </ul>
-      </section>
-
-    </main>
-  </body>
-</html>
+  <section>
+    <h2>Start here</h2>
+    <ul>
+      <li><a href="/posts">Tutorials, comparisons, cases, news</a></li>
+      <li><a href="/publications">Papers and publications</a></li>
+      <li><a href="/people">Team and contributors</a></li>
+    </ul>
+  </section>
+</Layout>
