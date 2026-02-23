@@ -1,0 +1,70 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const all = (await getCollection("publications"))
+  .sort((a, b) => (b.data.year - a.data.year) || a.data.title.localeCompare(b.data.title));
+
+const categories = ["books", "methodology", "applications", "conference"] as const;
+
+const categoryTitle: Record<(typeof categories)[number], string> = {
+  books: "Books",
+  methodology: "Methodology",
+  applications: "Applications",
+  conference: "Conference",
+};
+---
+
+<Layout title="Publications | SimDec">
+  <h1>Publications</h1>
+
+  {categories.map((cat) => {
+    const items = all.filter((p) => p.data.category === cat);
+    if (items.length === 0) return null;
+
+    return (
+      <section>
+        <h2>{categoryTitle[cat]}</h2>
+
+        <ul style="padding-left: 1.2rem; margin: 0;">
+          {items.map((p) => (
+            <li style="margin: 1rem 0;">
+              <a href={`/publications/${p.slug}`} style="font-weight: 800;">
+                {p.data.title}
+              </a>
+
+              <div style="opacity: 0.85; margin-top: 0.25rem;">
+                {p.data.authors.join(", ")} ({p.data.year})
+                {p.data.venue ? ` — ${p.data.venue}` : ""}
+              </div>
+
+              {p.data.summary ? (
+                <div style="opacity: 0.8; margin-top: 0.25rem;">
+                  {p.data.summary}
+                </div>
+              ) : null}
+
+              <div style="opacity: 0.75; margin-top: 0.25rem;">
+                {p.data.url ? (
+                  <>
+                    <a href={p.data.url} target="_blank" rel="noopener noreferrer">Link</a>
+                    {" · "}
+                  </>
+                ) : null}
+                {p.data.doi ? (
+                  <>
+                    <span>DOI: {p.data.doi}</span>
+                    {" · "}
+                  </>
+                ) : null}
+                {p.data.pdf ? (
+                  <a href={p.data.pdf} target="_blank" rel="noopener noreferrer">PDF</a>
+                ) : null}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+    );
+  })}
+</Layout>

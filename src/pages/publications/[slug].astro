@@ -1,0 +1,59 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const pubs = await getCollection("publications");
+  return pubs.map((pub) => ({
+    params: { slug: pub.slug },
+    props: { pub },
+  }));
+}
+
+const { pub } = Astro.props;
+const { Content } = await pub.render();
+---
+
+<Layout title={`${pub.data.title} | SimDec`}>
+  <a href="/publications" style="text-decoration: none;">← Back to Publications</a>
+
+  <h1 style="margin-top: 0.75rem;">{pub.data.title}</h1>
+
+  <div style="opacity: 0.85; margin-top: 0.35rem;">
+    {pub.data.authors.join(", ")} ({pub.data.year})
+    {pub.data.venue ? ` — ${pub.data.venue}` : ""}
+  </div>
+
+  <div style="opacity: 0.8; margin-top: 0.5rem;">
+    Category: {pub.data.category}
+    {pub.data.tags?.length ? ` · Tags: ${pub.data.tags.join(", ")}` : ""}
+  </div>
+
+  <div style="margin-top: 0.75rem;">
+    {pub.data.url ? (
+      <a href={pub.data.url} target="_blank" rel="noopener noreferrer">Open link</a>
+    ) : null}
+    {pub.data.pdf ? (
+      <>
+        {" · "}
+        <a href={pub.data.pdf} target="_blank" rel="noopener noreferrer">PDF</a>
+      </>
+    ) : null}
+    {pub.data.doi ? (
+      <>
+        {" · "}
+        <span>DOI: {pub.data.doi}</span>
+      </>
+    ) : null}
+  </div>
+
+  <hr style="border: 0; border-top: 1px solid rgba(0,0,0,.12); margin: 1.5rem 0;" />
+
+  {pub.data.summary ? (
+    <p style="opacity: 0.9;">
+      <strong>Summary:</strong> {pub.data.summary}
+    </p>
+  ) : null}
+
+  <Content />
+</Layout>
