@@ -1,0 +1,20 @@
+---
+title: "Fatigue strength assessment of arc-welded aluminum joints by local approaches"
+year: 2025
+authors:
+  - "Juho Havia"
+  - "Antti Ahola"
+  - "Mariia Kozlova"
+  - "Jörg Baumgartner"
+  - "Timo Björk"
+venue: "International Journal of Fatigue"
+category: "applications"
+summary: "Evaluation of local fatigue approaches for welded aluminum — enhanced with SimDec-based global sensitivity analysis."
+url: "https://doi.org/10.1016/j.ijfatigue.2024.108803"
+---
+
+This paper evaluates two local fatigue approaches, the Effective Notch Stress (ENS) method and the 4R method, on a large experimental dataset of arc-welded aluminum joints.
+
+Beyond benchmarking design curves, the study integrates global sensitivity analysis with SimDec to clarify the factors driving fatigue predictions. The results show that residual stresses, stress ratio, and notch geometry dominate the 4R response, while detailed material curve parameters play a surprisingly minor role.
+
+The contribution is twofold: validating local fatigue methods for aluminum structures and demonstrating how simulation decomposition makes complex engineering models transparent.
