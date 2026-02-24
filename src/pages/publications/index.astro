@@ -19,6 +19,19 @@ const categoryTitle: Record<(typeof categories)[number], string> = {
 };
 ---
 
+<style>
+  .pub-authors {
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0.25rem 0 0;
+  }
+
+  .pub-venue {
+    color: rgba(0, 0, 0, 0.6);
+    font-style: italic;
+    margin: 0.1rem 0 0.6rem;
+  }
+</style>
+
 <Layout title="Publications | SimDec">
   <h1>Publications</h1>
 
@@ -37,10 +50,13 @@ const categoryTitle: Record<(typeof categories)[number], string> = {
                 {p.data.title}
               </a>
 
-              <div style="opacity: 0.85; margin-top: 0.25rem;">
+              <p class="pub-authors">
                 {p.data.authors.join(", ")} ({p.data.year})
-                {p.data.venue ? ` — ${p.data.venue}` : ""}
-              </div>
+              </p>
+
+              <p class="pub-venue">
+                {p.data.venue}
+              </p>
 
               {p.data.summary ? (
                 <div style="opacity: 0.8; margin-top: 0.25rem;">
@@ -50,19 +66,25 @@ const categoryTitle: Record<(typeof categories)[number], string> = {
 
               <div style="opacity: 0.75; margin-top: 0.25rem;">
                 {p.data.url ? (
-                  <>
-                    <a href={p.data.url} target="_blank" rel="noopener noreferrer">PDF</a>
-               
-                  </>
+                  <a href={p.data.url} target="_blank" rel="noopener noreferrer">
+                    PDF
+                  </a>
                 ) : null}
+
                 {p.data.doi ? (
                   <>
-                    <span>DOI: {p.data.doi}</span>
                     {" · "}
+                    <span>DOI: {p.data.doi}</span>
                   </>
                 ) : null}
+
                 {p.data.pdf ? (
-                  <a href={p.data.pdf} target="_blank" rel="noopener noreferrer">PDF</a>
+                  <>
+                    {" · "}
+                    <a href={p.data.pdf} target="_blank" rel="noopener noreferrer">
+                      PDF
+                    </a>
+                  </>
                 ) : null}
               </div>
             </li>
