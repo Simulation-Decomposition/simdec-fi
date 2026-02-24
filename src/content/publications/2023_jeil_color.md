@@ -2,7 +2,7 @@
 title: "The Importance of Intelligent Colouring for Simulation Decomposition in Environmental Analysis"
 year: 2023
 authors:
-  - "Amin Alam"
+  - "Abid Alam"
   - "Mariia Kozlova"
   - "L. T. Leifsson"
   - "Julian Scott Yeomans"
