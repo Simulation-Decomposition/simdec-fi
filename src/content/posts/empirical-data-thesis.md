@@ -1,7 +1,7 @@
 ---
 title: "Exploring empirical data with SimDec"
 date: 2026-03-15
-category: "case"
+category: "cases"
 summary: "Trying SimDec on a master's thesis dataset shows how easily empirical data can be explored with sensitivity analysis."
 tags: ["simdec", "empirical data", "sensitivity analysis"]
 ---
