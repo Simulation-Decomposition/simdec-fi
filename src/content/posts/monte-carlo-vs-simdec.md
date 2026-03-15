@@ -34,15 +34,14 @@ SimDec, in addition, helps you:
 
 When a distribution has multiple peaks, wide tails, or abrupt shifts, decision-makers usually ask the same question:
 
-**What is driving this?**
-
-SimDec is built for exactly that moment.
+**What is driving this?** SimDec is built for exactly that moment.
 
 SimDec insights would sound like this:
 
-- this region comes from high demand and low cost
-- that region appears when efficiency drops and prices rise
-- another scenario still works, but only under narrower conditions
+- 80% of my output variability is driven by the price and efficiency
+- that nice region comes from high efficiency and high prices
+- price drop has an adverse effect only when efficiency is low
+- the second-best scenario is not bad at all!
 
 ## The bottom line is
 
