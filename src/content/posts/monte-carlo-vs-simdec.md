@@ -43,9 +43,7 @@ SimDec insights would sound like this:
 - price drop has an adverse effect only when efficiency is low
 - the second-best scenario is not bad at all!
 
-## The bottom line is
-
-If your goal is only to quantify variation and estimate value at risk, Monte Carlo may be enough.  
+**The bottom line is:** If your goal is only to quantify variation and estimate value at risk, Monte Carlo may be enough.  
 If your goal is to understand outcomes, communicate them, and act on them, show that simulation dataset to SimDec.
 
 ## Already running Monte Carlo? You're minutes away from SimDec insight
