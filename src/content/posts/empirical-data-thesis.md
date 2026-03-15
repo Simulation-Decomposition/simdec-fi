@@ -12,7 +12,7 @@ When I was examining a [Master's thesis](https://lutpub.lut.fi/handle/10024/1713
 
 Preparing the data took almost no effort. The only thing needed was converting categorical variables into numeric ones so the dashboard could read them. After that, it was just a matter of uploading the CSV file.
 
-![SimDec results](sara_thesis.png)
+![SimDec results](/sara_thesis.png)
 
 The results show several things that line up with the thesis conclusions. 
 Firm fundamentals dominate the explanation of firm value: net income and equity clearly stand out as the most influential drivers of market capitalization. 
