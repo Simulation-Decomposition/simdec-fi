@@ -12,18 +12,11 @@ Monte Carlo simulation is excellent at showing the spread of possible outcomes. 
 
 That is useful, but often incomplete.
 
-A Monte Carlo histogram tells you **what happened**. It usually does not tell you **which combinations of inputs created each region of the distribution**, why peaks appear, or what separates a good outcome from a bad one.
+A Monte Carlo histogram tells you what happened. It usually does not tell you which combinations of inputs created each region of the distribution, why peaks appear, or what separates a good outcome from a bad one.
 
 SimDec adds that missing layer.
 
 It takes the same simulation output and decomposes the distribution into clear, interpretable scenarios built from ranges of key inputs. Instead of staring at a mystery hump in a histogram, you can see which input conditions produced it.
-
-## In one line
-
-- **Monte Carlo simulation:** maps uncertainty to an output distribution.
-- **SimDec:** explains that distribution through scenario-based decomposition.
-
-## What Monte Carlo gives you
 
 Monte Carlo is strong when you want to:
 
@@ -31,27 +24,21 @@ Monte Carlo is strong when you want to:
 - see the range and likelihood of outcomes
 - test robustness under variable assumptions
 
-But the result is often a black box with a beautiful shape.
+SimDec, in addition, helps you:
 
-## What SimDec adds
-
-SimDec helps you:
-
+- quantify the importance of input variables
 - connect output regions to input conditions
 - reveal interactions between variables
 - explain non-linear behavior visually
 - turn simulation results into decision-ready scenarios
 
-## Why that matters
-
 When a distribution has multiple peaks, wide tails, or abrupt shifts, decision-makers usually ask the same question:
 
 **What is driving this?**
 
-Monte Carlo alone rarely answers that cleanly.  
 SimDec is built for exactly that moment.
 
-It turns a dense probability picture into something readable:
+SimDec insights would sound like this:
 
 - this region comes from high demand and low cost
 - that region appears when efficiency drops and prices rise
@@ -59,13 +46,11 @@ It turns a dense probability picture into something readable:
 
 ## The bottom line is
 
-If your goal is only to quantify variation, Monte Carlo may be enough.  
-If your goal is to understand outcomes, communicate them, and act on them, SimDec gives that distribution a legend.
+If your goal is only to quantify variation and estimate value at risk, Monte Carlo may be enough.  
+If your goal is to understand outcomes, communicate them, and act on them, show that simulation dataset to SimDec.
 
 ## Already running Monte Carlo? You're minutes away from SimDec insight
 
-If you already run Monte Carlo simulations, you already have everything needed for SimDec.
-
-Just export the **input–output dataset** from your simulation runs and upload it to the **[SimDec dashboard](https://simdec.io)**. In a few minutes, the platform will decompose your output distribution into interpretable scenarios.
+Just export the input–output dataset from your simulation and upload it to the free **[SimDec dashboard](https://simdec.io)**. In a few minutes, the platform will decompose your output distribution into interpretable scenarios.
 
 If you need help getting started, see the [quick tutorial](https://youtu.be/z0QX121o50A?si=HtQrzQiP3FKLFs0D) or chat with the [SimDec assistant](https://chatgpt.com/g/g-69b41f4fa01c819181ed3a7f3256c6b5-simdec-assisstant).
