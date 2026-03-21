@@ -27,7 +27,7 @@ Some macro variables may not change much across observations.
 
 Let’s also see how the hedge ratio looks when contrasted with market capitalization. This can be easily done with the SimDec two-output plot.
 
-![Two-output plot from thesis data](two-output-thesis-empirical.png)
+![Two-output plot from thesis data](/two-output-thesis-empirical.png)
 
 This adds one more nuance to the picture. For smaller firms, hedge ratio seems to have little visible relationship with firm value. Most observations are clustered near low market capitalization and low hedge ratios, without any clear pattern. In the subgroup of larger and financially stronger firms, especially those with high income and high equity, there are some signs of a more positive association. Still, the pattern is weak. It may simply reflect the fact that larger and stronger firms both hedge more and have higher market values, rather than a direct value effect of hedging itself.
 
