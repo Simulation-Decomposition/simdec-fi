@@ -3,7 +3,7 @@ title: "Welcome Justus"
 date: 2026-03-24
 category: "news"
 summary: "Justus Helo, a Master's student in industrial engineering, LUT University, joins the SimDec team."
-tags: ["simdec", "assistant", "tools"]
+tags: ["simdec", "team", "research", "open-source"]
 ---
 
 <img src="/justus.gif" alt="Justus Helo" style="width:160px;" />
