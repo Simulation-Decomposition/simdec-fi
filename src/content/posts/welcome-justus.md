@@ -6,7 +6,7 @@ summary: "Justus Helo, a Master's student in industrial engineering, LUT Univers
 tags: ["simdec", "assistant", "tools"]
 ---
 
-<img src="/justus.gif" alt="Justus Helo" style="width:80px;" />
+<img src="/justus.gif" alt="Justus Helo" style="width:160px;" />
 
 Justus Helo, a Master's student in industrial engineering at LUT University, joins the SimDec team.
 
