@@ -2,12 +2,10 @@
 title: "Simple investment case"
 date: 2026-04-09
 category: "cases"
+order: 1
 summary: "A super simple model to illustrate SimDec in action."
 tags: ["simdec", "cash flow", "finance", "investment analysis"]
 ---
-
-# Investment case
-
 
 Investment profitability modeling is an essential tool for decision-making support. From building a power plant to developing a new product or starting our own business, investment profitability helps us decide if it’s worth it. Being a forward-looking exercise, it is naturally affected by multiple uncertainties. And knowing what affects profitability the most equips the decision-maker with strategic wisdom. 
 
