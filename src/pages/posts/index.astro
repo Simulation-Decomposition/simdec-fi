@@ -6,12 +6,12 @@ const all = (await getCollection("posts"))
   .filter((p) => !p.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
-const categories = ["tutorial", "comparison", "cases", "news", "other"] as const;
+const categories = ["tutorial", "cases", "comparison", "news", "other"] as const;
 
 const categoryTitle: Record<(typeof categories)[number], string> = {
   tutorial: "Tutorials",
-  comparison: "Comparisons",
   cases: "Cases",
+  comparison: "Comparisons",
   news: "News",
   other: "Other",
 };
