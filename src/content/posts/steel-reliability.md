@@ -6,8 +6,6 @@ summary: "SimDec as a window to a complex engineering model with heterogeneous e
 tags: ["simdec", "4R model", "engineering", "heterogeneous effects"]
 ---
 
-# Steel reliability case
-
 We want our bridges, trains, cranes, and factory machines to be strong and last long. Yet steel structures slowly gather tiny, invisible cracks that can grow into serious dangers. To prevent costly breakdowns, reputational damage, or, most importantly, the risk to human lives, it’s crucial to carefully assess the reliability of steel structures. 
 
 ## Case description
