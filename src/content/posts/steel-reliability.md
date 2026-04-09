@@ -35,7 +35,7 @@ $$
 K_f = K_t \big(r = r_{\text{true}} + 1\,\text{mm}\big),
 $$
 
-The resulting input-output dataset is provided for the analysis.
+The resulting [input-output dataset](https://github.com/Sensitivity-Analysis-for-Model-Output/HowToTeachSensitivityAnalysis/tree/4fef023c84bdc9db6f394aae2509d7a8f16ff651/case_studies/steel_reliability) is provided for the analysis. Via the same link you will find a Jupiter notebook to replicate all of the analysis below.
 
 ## Global sensitivity analysis
 
