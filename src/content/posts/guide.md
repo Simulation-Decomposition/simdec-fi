@@ -1,5 +1,5 @@
 ---
-title: "A quick guide to simdec"
+title: "A quick guide to SimDec"
 date: 2026-04-09
 category: "tutorial"
 summary: "SimDec algorithm, software, and interpretation."
